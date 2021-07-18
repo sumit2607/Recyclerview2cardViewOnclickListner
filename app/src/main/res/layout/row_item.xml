@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_id">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/courseImg"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/cursename"
+        android:layout_toRightOf="@+id/courseImg"
+        android:layout_width="408dp"
+        android:layout_height="42dp"
+        android:text="@string/java_is_good"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/cursedesc"
+        android:layout_below="@+id/cursename"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/courseImg"
+        android:layout_width="408dp"
+        android:layout_height="42dp"
+        android:text="desc"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+    <Button
+        android:layout_below="@+id/cursedesc"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/courseImg"
+        android:layout_width="408dp"
+        android:layout_height="42dp"
+        android:text="Buy now"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
